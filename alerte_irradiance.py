@@ -9,8 +9,8 @@ if not API_KEY:
     raise Exception("Erreur : variable d'environnement API_KEY non définie")
 
 # Coordonnées du lieu (ici Castelnaudary 43.10713483230613, 0.7244646904930029)
-LAT = 43.10713483230613
-LON = 0.7244646904930029
+LAT = 43.109265
+LON = 0.724808
 
 def get_forecast():
     url = f"https://api.meteofrance.com/forecast/hourly?lat={LAT}&lon={LON}&model=arome"
